@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const apiRoutes = require('./api');
 
+// apiRoutes leads to the following url paramaters
 router.use('/api', apiRoutes);
-
 router.use((req, res) => {
   res.send("<h1>Wrong Route!</h1>")
 });
